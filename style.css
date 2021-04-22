@@ -1,0 +1,71 @@
+/*--->classes que controlam o mapa como um todo<---*/
+.map {
+  align-content: center;
+}
+/*tamanho do mapa. Substituir por width e height se quiser aumentar*/
+.map svg {
+  width: 100%;
+  display: block;
+}
+/*preenchimento padrão do mapa*/
+.map path {
+  fill: #ccc;
+  stroke: #716f87;
+  stroke-width: 1;
+}
+/*caracteríticas quando o mouse passa por cima do mapa*/
+.map path:hover {
+  fill: #f78736 !important;
+  cursor: help;
+}
+
+/*--->classes que controlam o painel de informação que aparece quando passa o mouse<---*/
+.info_panel {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.info_panel::first-line {
+  font-weight: bold;
+}
+
+/*classe padrão da tabelinha no painel de informação*/
+table.unstyledTable {
+  /*border: 1px solid #535353;*/
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*classes para as cores das tabelinhas no painel de informação*/
+.r1 {
+  background-color: #d2f7b2;
+}
+.r2 {
+  background-color: #feffba;
+}
+.r3 {
+  background-color: #ffd6a3;
+}
+.r4 {
+  background-color: #ffa3a3;
+}
+
+/*classe para o título MAPEAMENTO PMSP no painel de informação*/
+.header {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#casas {
+  height: 50px;
+}
